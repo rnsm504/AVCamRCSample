@@ -231,7 +231,7 @@ class CameraViewController : UIViewController, AVCaptureFileOutputRecordingDeleg
     override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
         
-        let deviceOrientation = UIDevice.currentDevice().orientation
+        let deviceOrientation : UIDeviceOrientation = UIDevice.currentDevice().orientation
         if(UIDeviceOrientationIsPortrait(deviceOrientation) || UIDeviceOrientationIsLandscape(deviceOrientation)){
             let previewLayer = self.previewView.layer as! AVCaptureVideoPreviewLayer
             
