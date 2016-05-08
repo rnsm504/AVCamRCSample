@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVCamSample/CameraViewController.swift"
-            timestampString = "483206830.504572"
+            timestampString = "483804086.836749"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "viewDidLoad()"
             landmarkType = "5">
          </BreakpointContent>
@@ -26,13 +26,125 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVCamSample/CameraViewController.swift"
-            timestampString = "483206830.504572"
+            timestampString = "484409797.462607"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "340"
-            endingLineNumber = "340"
-            landmarkName = "sessionWasInterrupted(_:)"
+            startingLineNumber = "488"
+            endingLineNumber = "488"
+            landmarkName = "addObservers()"
             landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCamSample/CameraViewController.swift"
+            timestampString = "484409797.462607"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "468"
+            endingLineNumber = "468"
+            landmarkName = "addObservers()"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCamSample/CameraViewController.swift"
+            timestampString = "484409797.462607"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "303"
+            endingLineNumber = "303"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVCamSample.CameraViewController.(viewDidLoad () -&gt; ()).(closure #3)"
+                  moduleName = "AVCamSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/masanori/Desktop/develop/AVCamSample/AVCamSample/CameraViewController.swift"
+                  timestampString = "483937092.127041"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "178"
+                  endingLineNumber = "178"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVCamSample.CameraViewController.(viewDidLoad () -&gt; ()).(closure #3).(closure #1)"
+                  moduleName = "AVCamSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/masanori/Desktop/develop/AVCamSample/AVCamSample/CameraViewController.swift"
+                  timestampString = "483937092.127173"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "179"
+                  endingLineNumber = "179"
+                  offsetFromSymbolStart = "28">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVCamSample/CameraViewController.swift"
+            timestampString = "484409797.462607"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "349"
+            endingLineNumber = "349"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVCamSample.CameraViewController.viewDidLoad () -&gt; ()"
+                  moduleName = "AVCamSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/masanori/Desktop/develop/AVCamSample/AVCamSample/CameraViewController.swift"
+                  timestampString = "484366871.231349"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "224"
+                  endingLineNumber = "224"
+                  offsetFromSymbolStart = "3936">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "AVCamSample.CameraViewController.(viewDidLoad () -&gt; ()).(closure #4)"
+                  moduleName = "AVCamSample"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/masanori/Desktop/develop/AVCamSample/AVCamSample/CameraViewController.swift"
+                  timestampString = "484366871.231565"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "225"
+                  endingLineNumber = "225"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

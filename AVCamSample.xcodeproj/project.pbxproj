@@ -16,6 +16,8 @@
 		8C1324401CC3D95800540047 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C13243F1CC3D95800540047 /* PreviewView.swift */; };
 		8C1324421CC3D98C00540047 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1324411CC3D98C00540047 /* AVFoundation.framework */; };
 		8C1324441CC3DCF600540047 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C1324431CC3DCF600540047 /* CameraViewController.swift */; };
+		8C4DDB6B1CD640560021F343 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4DDB6A1CD640560021F343 /* ReactiveCocoa.framework */; };
+		8C4DDB6D1CD6405B0021F343 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C4DDB6C1CD6405B0021F343 /* Result.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		8C13243F1CC3D95800540047 /* PreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		8C1324411CC3D98C00540047 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		8C1324431CC3DCF600540047 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		8C4DDB6A1CD640560021F343 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		8C4DDB6C1CD6405B0021F343 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C1324421CC3D98C00540047 /* AVFoundation.framework in Frameworks */,
+				8C4DDB6B1CD640560021F343 /* ReactiveCocoa.framework in Frameworks */,
+				8C4DDB6D1CD6405B0021F343 /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +88,8 @@
 		8C1324031CC3D8E000540047 = {
 			isa = PBXGroup;
 			children = (
+				8C4DDB6C1CD6405B0021F343 /* Result.framework */,
+				8C4DDB6A1CD640560021F343 /* ReactiveCocoa.framework */,
 				8C1324411CC3D98C00540047 /* AVFoundation.framework */,
 				8C13240E1CC3D8E000540047 /* AVCamSample */,
 				8C1324231CC3D8E000540047 /* AVCamSampleTests */,
@@ -142,6 +150,7 @@
 				8C1324081CC3D8E000540047 /* Sources */,
 				8C1324091CC3D8E000540047 /* Frameworks */,
 				8C13240A1CC3D8E000540047 /* Resources */,
+				8C4DDB6E1CD640970021F343 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -257,6 +266,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C4DDB6E1CD640970021F343 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8C1324081CC3D8E000540047 /* Sources */ = {
@@ -407,6 +434,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AVCamSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.blogspot.rnsm504.AVCamSample;
@@ -418,6 +449,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = AVCamSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.blogspot.rnsm504.AVCamSample;
